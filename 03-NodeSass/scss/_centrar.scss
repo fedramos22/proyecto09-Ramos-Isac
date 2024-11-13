@@ -1,0 +1,14 @@
+%centrar {display: flex;
+justify-content: center;
+}
+
+.navbar__menu{
+    color: lavender;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5rem calc((100vw - 1200) / 2);
+    z-index: 10;
+    position: relative;
+}

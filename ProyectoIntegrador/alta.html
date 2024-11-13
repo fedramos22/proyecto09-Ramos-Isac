@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar Productos</title>
+    <link rel="icon" href="imagenes/icono.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+            <div class="titulo">
+                <figure>
+                    <img src="imagenes/icono.jpg" alt="icono" class="icono">
+                </figure>
+                
+                <h1 id="nombre">Kumar Construcciones </h1>
+            </div>
+            </a>    
+            <ul class="barra-nav">
+                <li class="navegador"> <a href="alta.html">Servicios</a> </li>
+                <li class="navegador"> <a href="contacto.html">Contacto</a> </li>
+                <li class="navegador"> <a href="nosotros.html">Nosotros</a> </li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main class="main-alta">
+        
+        
+        <form action="Carga-Productos" method="post" class="formulario-productos">
+            <fieldset class="contenedor-form">
+                <legend>Datos del producto</legend>
+            <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" placeholder="Cemento" class="campo" required> <br><br>
+            <label for="marca">Marca:</label>
+                <select name="marca" id="marca" required>
+                    <option value="Cemex">Cemex</option>
+                    <option value="Knauf">Knauf</option>
+                    <option value="Saint-Gobain">Saint-Gobain</option>
+                    <option value="Sika">Sika</option>
+                    <option value="Roca">Roca</option>
+                    <option value="Dewalt">Dewalt</option>
+                </select><br><br>
+            <label for="Categoria">Categoria:</label>
+                <select name="caegoria" id="categoria">
+                    <option value="cemento">Cemento y productos derivados.</option>
+                    <option value="placas">Placas de yeso y sistemas de construcción en seco.</option>
+                    <option value="quimicos">Productos químicos</option>
+                    <option value="sanitarios">Sanitarios y accesorios de baño.</option>
+                    <option value="Herramientas">Herramientas eléctricas y equipos de construcción.</option>
+                </select><br><br>
+            <label for="Precio">Precio:</label>
+                <input type="number" id="Precio" placeholder="$10000"> <br><br>
+            <label for="Stock">Stock:</label>
+                <input type="number" id="Stock"><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Descripcion corta</legend>
+                <input type="checkbox" id="Marmol">
+                <label for="Marmol">Mármol</label><br>
+                <input type="checkbox" id="Piedra">
+                <label for="Piedra">Piedra</label><br>
+                <input type="checkbox" id="ladrillo">
+                <label for="ladrillo">Ladrillo</label><br>
+                <input type="checkbox" id="madera">
+                <label for="madera">Madera</label><br>
+                <input type="checkbox" id="Hierro">
+                <label for="Hierro">Hierro</label><br>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Descripcion larga</legend>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Cuentanos en detalle tu objetivo de construcción"></textarea> <br>
+                <label for="archivo">Adjunta algun ejemplo:</label>
+                <input type="file" id="archivo">
+            </fieldset>
+
+            <fieldset>
+                <label for="envio">Envio:</label>
+                <input type="radio" name="envio" value="Si" required>Si 
+                <input type="radio" name="envio" value="No" required>No <br>
+            <div id="edad">
+                <label for="desde">Edad desde:</label>
+                <input type="text" name="desde"><br>
+                <label for="hasra">Edad hasta:</label>
+                <input type="text" name="hasta" >
+            </div>
+            </fieldset>
+                
+            
+            <input type="submit" value="Enviar" id="boton">
+            
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <div id="contacto">
+            <h4 id="titulo-final">NUESTRO <br>CONTACTO</h4>
+            <div class="datos">
+                
+                <h5> Kumar Construcciones</h5>
+                <p>Calle falsa 123 <br>
+                CABA</p>
+            </div>
+            <div class="datos">
+                <p>Tel:(12)3456-7891</p>
+                <p>Email:kumar@construcciones.com.ar</p>
+                <p>Social:@Kumar</p>
+            </div>
+            <figure>
+                <img src="imagenes/edificio1.jpg" alt="edificio" class="img-fondo">
+            </figure>
+        </div>
+    </footer>
+    
+</body>
+</html>

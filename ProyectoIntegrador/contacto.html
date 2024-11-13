@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar acceso</title>
+    <link rel="icon" href="imagenes/icono.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+            <div class="titulo">
+                <figure>
+                    <img src="imagenes/icono.jpg" alt="icono" class="icono">
+                </figure>
+                
+                <h1 id="nombre">Kumar Construcciones </h1>
+            </div>
+            </a>
+            <ul class="barra-nav">
+                <li class="navegador"> <a href="alta.html">Servicios</a> </li>
+                <li class="navegador"> <a href="contacto.html">Contacto</a> </li>
+                <li class="navegador"> <a href="nosotros.html">Nosotros</a> </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="main-alta">
+        <form action="Formulario-Contacto" method="post" class="formulario-productos">
+            <fieldset class="contenedor-form">
+                <legend>Formulario de Contacto</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" class="form-contacto" placeholder="Maria Victoria Isac" required><br>
+                <label for="Email">Email:</label>
+                    <input type="email" name="Email" class="form-contacto" placeholder="info@gmail.com" required><br>
+                <label for="Comentario">Comentarios:</label><br>
+                <textarea name="Comentario" class="form-contacto" cols="60" rows="10"></textarea>
+                <input type="submit" value="Enviar" id="boton">
+                
+            </fieldset>
+        </form>
+    </main>    
+    
+    <footer>
+        <div id="contacto">
+            <h4 id="titulo-final">NUESTRO <br>CONTACTO</h4>
+            <div class="datos">
+                
+                <h5> Kumar Construcciones</h5>
+                <p>Calle falsa 123 <br>
+                CABA</p>
+            </div>
+            <div class="datos">
+                <p>Tel:(12)3456-7891</p>
+                <p>Email:kumar@construcciones.com.ar</p>
+                <p>Social:@Kumar</p>
+            </div>
+            <figure>
+                <img src="imagenes/edificio1.jpg" alt="edificio" class="img-fondo">
+            </figure>
+        </div>
+    </footer>
+    
+</body>
+</html>
